@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    background-color: #181a20;
+    height: 100vh;
+}
+
+h1 {
+    text-shadow: 0 0 10px #FCF8E8;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 80%;
+    text-shadow: 0 0 5px #FCF8E8;
+    padding-top: 0.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.animated {
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 3pt;
+    z-index: -1;
+}
+
+#starSign {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+}
+
+#description {
+    color: white;
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+#title {
+    text-align: right;
+    color: white;
+    padding-right: 1em;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
